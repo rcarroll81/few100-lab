@@ -1,3 +1,59 @@
 h1 {
-    color:red;
+    color: #0F83CB;
+    font-family: Arial;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Impact;
+}
+.list-group{
+    display: inline-block;
+    width: 15%;
+    font-family: Impact;
+}
+.input-group{
+    width: 15%;
+    font-family: Impact;
+}
+.calculator{
+    padding-left: 50px;
+}
+.btn-secondary{
+    background-color: #4D4D4D;
+    border: none;
+    font-size: 20px;
+}
+.btn-group{
+    width: 15%;
+    padding-bottom: 15px;
+    font-family: Impact;
+}
+#tip-percent{
+    padding-left: 15px;
+}
+#bill-amount{
+    padding-left: 15px;
+}
+#tip-amount{
+    padding-left: 15px;
+}
+#bill-total{
+    padding-left: 15px;
+}
+#ten:hover{
+    background-color: green;
+}
+#ten:disabled{
+    background-color: red;
+}
+#fifteen:hover{
+    background-color: green;
+}
+#fifteen:disabled{
+    background-color: red;
+}
+#twenty:hover{
+    background-color: green;
+}
+#twenty:disabled{
+    background-color: red;
 }
