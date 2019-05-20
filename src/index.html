@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Webpack Showcase</title>
+    <title>Calculate Your Tip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>Welcome to Class.</h1>
+    <div class="calculator">
+        <h1>Tip Calculator</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" id="num" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <div id="amount-buttons" class="btn-group" role="group" aria-label="Basic example">
+            <button data-amount="10" id="ten" type="button" value="10%" class="btn btn-secondary">10%</button>
+            <button data-amount="15" id="fifteen" type="button" value="15%" class="btn btn-secondary">15%</button>
+            <button data-amount="20" disabled id ="twenty" type="button" value="20%" class="btn btn-secondary">20%</button>
+        </div>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item"  >Bill Amount:<span id="bill-amount">$0</span></li>
+                <li class="list-group-item" >Tip Percentage:<span id="tip-percent">20%</span></li>
+                <li class="list-group-item" >Amount of tip:<span id="tip-amount">$0</span></li>
+                <li class="list-group-item" >Total to be Paid:<span id="bill-total">$0</span></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
